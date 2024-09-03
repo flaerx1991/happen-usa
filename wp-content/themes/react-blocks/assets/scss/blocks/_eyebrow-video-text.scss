@@ -1,0 +1,37 @@
+.eyebrow-video-text{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../../assets/images/video-section.svg");
+    padding: 25px 0;
+    @include laptop{
+        padding: 46px 0; 
+    }
+    .container{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        .eyebrow{
+            margin-bottom: 120px;   
+        }
+        .video-hook{
+            max-width: max-content;
+            position: relative;
+            &:before{
+                content: "";
+                position: absolute;
+                width: 128px;
+                height: 128px;
+                background-image: url(../../assets/images/play-button.svg);
+                right: 34px;
+                bottom: 57px;
+                display: block;
+            }
+        }
+        .block-image{
+            width: 100%;
+            max-width: 916px;
+            
+        }
+    }
+} 

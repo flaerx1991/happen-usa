@@ -1,0 +1,90 @@
+.category-grid {
+    padding: 96px 0;
+    .container{
+        padding: 0 24px;
+        @include laptop{
+            padding: 0 32px;
+        }  
+        .posts-grid{
+            grid-template-columns: 1fr;
+            column-gap: 32px;
+            row-gap: 40px;
+            @include tablet {
+                grid-template-columns: repeat(3,1fr);
+            }
+        }
+        .post{
+            display: flex;
+            flex-direction: column;
+            border:1px solid $gray-2;
+            border-radius: 16px;
+            .post-container{
+                padding: 32px 24px;
+                .post-header{
+                    .post-title{
+                        font-size: rem(24);
+                        line-height: rem(32);
+                        font-weight: 700;
+                        color: $blue-1;
+                        margin-bottom: 8px; 
+                    }
+                }
+                .content{
+                    font-size: rem(16);
+                    line-height: rem(24);
+                    color:$gray-6;
+                }
+                .post-navigation{
+                    margin-top: 8px;
+                    .post-link{
+                        color:#004D7A;
+                        font-weight: 700;
+                        font-size: rem(14);
+                        line-height: rem(20);
+                    }
+                }
+            }
+            
+            .post-thumbnail{
+                    border-radius: 16px 16px 0px 0px;
+                    max-height: 240px;
+                    aspect-ratio: 1/1;
+                    object-fit: cover;
+            }
+
+        }
+        .pagination{
+            display: block;
+            text-align: center;
+            .nav-links{
+                .page-numbers{
+                    padding: 10px;
+                    font-size: rem(16);
+                    line-height: rem(24);
+                    color: #667085;
+                    font-weight: 700;
+                }
+                .current {
+                    background-color:$blue-4;
+                    color:$blue-7;
+                    border-radius: 6px;
+                }
+            }
+        }
+        .category-navigation {
+            margin-bottom: 40px;
+            .category{
+                padding: 10px;
+                font-size: rem(16);
+                line-height: rem(24);
+                color: #667085;
+                font-weight: 700;
+            }
+            .current {
+                background-color:$blue-4;
+                color:$blue-7;
+                border-radius: 6px;
+            }
+        }
+    }
+}

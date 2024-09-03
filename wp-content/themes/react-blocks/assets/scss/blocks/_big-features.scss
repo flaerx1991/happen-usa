@@ -1,0 +1,78 @@
+.big-features{
+    padding: 25px 0;
+    @include laptop{
+        padding: 46px 0; 
+    } 
+    .container{
+        .section-title,.section-description{
+            text-align: left;
+        }
+        .features-content{
+            margin-top: 64px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            @include laptop{
+                flex-wrap: nowrap;
+            }
+            .features-image{
+                width:100%;
+                border-radius: 16px;
+                margin-bottom: 30px;
+                aspect-ratio: 1/1;
+                object-fit: cover;
+                @include laptop{
+                    margin-bottom: 0px;
+                    max-width: 528px;
+                }
+            }
+            .features-list {
+                width: 100%;
+                flex-direction: column;
+                justify-content: space-between;
+                @include laptop{
+                    max-width: 624px;
+                }
+                .feature{
+                    align-items: flex-start;
+                    margin-bottom: 48px;
+                    &:last-of-type{
+                        margin-bottom: 0;
+                    }
+                    .feature-icon{
+                        width: 48px;
+                        height: 48px;
+                        margin-left: 16px;
+                    }
+                    .feature-col{
+                        padding: 10px 0;
+                        .feature-title{
+                            font-weight: 500;
+                            color:$black-1;
+                            font-size: rem(20);
+                            line-height: rem(30);
+                            margin-bottom: 8px;
+                        }
+                        .feature-description{
+                            color:#475467;
+                            margin-bottom: 20px;
+                        }
+                        .feature-link{
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: $blue-1;
+                        }
+                    }
+                    
+                    
+                }
+            }
+        }
+    }
+    .right{
+        .features-content{
+            flex-direction: row-reverse;
+        }
+       
+    }
+}  

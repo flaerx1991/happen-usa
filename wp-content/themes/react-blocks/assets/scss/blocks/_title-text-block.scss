@@ -1,0 +1,22 @@
+.title-text-block{
+    padding: 25px 0;
+    width:100%;
+    @include laptop{
+        padding: 46px 0; 
+    }
+    
+    .container{
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+        .section-title{
+            color:$blue-1;
+        }
+        .section-description{
+            font-size: rem(20);
+            max-width: 768px;
+            margin: 0 auto;
+            text-align: left;
+        }
+    }
+} 

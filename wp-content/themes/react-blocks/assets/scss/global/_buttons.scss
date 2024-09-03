@@ -1,0 +1,66 @@
+.btn{
+    font-weight: 700;
+    border-radius: 40px;
+    border: 1px solid;
+    &__sm{
+        font-size: rem(14);
+        line-height: rem(20);
+        padding: 8px 14px;
+    }
+    &__md{
+        font-size: rem(14);
+        line-height: rem(20);
+        padding: 10px 16px;
+    }
+    &_lg{
+        font-size: rem(16);
+        line-height: rem(24);
+        padding: 10px 24px;
+    }
+    &_xl{
+        font-size: rem(16);
+        line-height: rem(24);
+        padding: 12px 20px;
+    }
+    &_xxl{
+        font-size: rem(18);
+        line-height: rem(28);
+        padding: 16px 28px;
+    }
+}
+
+.primary{
+    background-color:$blue-1;
+    border-color:$blue-1;
+    color:$white;
+    text-align: center;
+    &:hover{
+        background-color:$blue-2;
+    }
+
+    &:focus{
+        border: 1px solid $blue-1;
+        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px $pink-1;
+    }
+    &:disabled {
+        background-color: $blue-3;
+    }
+}
+.secondary{
+    background-color:$white;
+    border-color:$gray-1;
+    color:$gray-4;
+    text-align: center;
+    &:hover{
+        background-color:$gray-3;
+    }
+
+    &:focus{
+        border: 1px solid $blue-1;
+        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px $gray-5;
+    }
+    &:disabled {
+        border-color: $gray-2;
+        color:$gray-1;
+    }
+}
